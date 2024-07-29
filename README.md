@@ -19,7 +19,6 @@ website, ensuring they have a means to protect their work if necessary.
 ## Usage
 
 1. Replace `kill.yourdomain.com` in the script with your own domain where the DNS TXT record is hosted;
-
 2. Host your version of the script somewhere accessible to the website, then include the script in the `<head>`
 section of the website:
 

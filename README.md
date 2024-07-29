@@ -23,7 +23,7 @@ website, ensuring they have a means to protect their work if necessary.
 section of the website:
 
 ```html
-<script src="https://username.github.io/your-repository/script.js"></script>
+<script src="https://username.github.io/your-repository/script.js" defer></script>
 ```
 
 ### Example DNS TXT Record

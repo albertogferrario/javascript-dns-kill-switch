@@ -4,7 +4,16 @@ document.addEventListener('DOMContentLoaded', function () {
         const killSwitchDomain = 'kill.yourdomain.com';
 
         try {
-            const response = await fetch(`https://dns.google/resolve?name=${killSwitchDomain}&type=TXT&nocache=${new Date().getTime()}`);
+            const response = await fetch(
+                `https://dns.google/resolve?name=${killSwitchDomain}&type=TXT&t=${new Date().getTime()}`,
+                {
+                    headers: {
+                        'Cache-Control': 'no-cache, no-store, must-revalidate',
+                        'Pragma': 'no-cache',
+                        'Expires': '0'
+                    }
+                }
+            );
             const data = await response.json();
 
             if (data.Answer) {

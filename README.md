@@ -18,19 +18,18 @@ website, ensuring they have a means to protect their work if necessary.
 
 ## Usage
 
-Host your version of the script somewhere accessible to the website, then include the script in the `<head>`
+1. Replace `kill.yourdomain.com` in the script with your own domain where the DNS TXT record is hosted;
+
+2. Host your version of the script somewhere accessible to the website, then include the script in the `<head>`
 section of the website:
 
-> GitHub pages has been used for this example.
-
 ```html
-
 <script src="https://username.github.io/your-repository/script.js"></script>
 ```
 
 ### Example DNS TXT Record
 
-> In this example, only anotherexample.com will have its content removed.
+In this example, only `anotherexample.com` will have its content removed.
 
 ```
 kill.yourdomain.com. IN TXT "example.com=0; anotherexample.com=1;"

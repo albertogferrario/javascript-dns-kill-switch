@@ -1,0 +1,1 @@
+# javascript-dns-kill-switch
